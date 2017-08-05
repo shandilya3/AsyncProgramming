@@ -38,6 +38,33 @@ export class CallBackComponentComponent implements OnInit {
     }
     var newArray = array1.filter(isOdd);
     console.log("after going through filter callback " + newArray);
+
+    //Chaining Callbacks
+
+    function myFunction(x, callback) {
+
+      callback(x+x);
+
+    }
+    var answer = 0;
+
+    myFunction(10, function (x) {
+
+      var result = x * x;
+      myFunction(result, function (x) {
+
+        var result2 = x + x;
+
+        myFunction(result2, function (x) {
+          answer = x + 100;
+
+          console.log("answer in the third call back is " + answer)
+        })
+      })
+
+    });
+
+
   }
   //Callback functions are functions that are passed as arguments into other functions to be executed at a later point in time.
   mul(x, y) {
