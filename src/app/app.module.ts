@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CallBackComponentComponent } from './call-back-component/call-back-component.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CallBackComponentComponent
   ],
   imports: [
     BrowserModule,
