@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { CallBackComponentComponent } from './call-back-component/call-back-component.component';
+import { TimersComponent } from './timers/timers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CallBackComponentComponent
+    CallBackComponentComponent,
+    TimersComponent
   ],
   imports: [
     BrowserModule,

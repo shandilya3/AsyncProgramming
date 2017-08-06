@@ -1,4 +1,11 @@
+# AsyncProgramming Definition in JS
+
+Asynchronous code is non-blocking and will only run when the call stack is empty.
+Asynchronous code can be shown by using a setTimeout() method call with a timeout value of 0. This will immediately put a task on the event queue.
+
+
 # AsynProgramming
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
