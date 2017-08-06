@@ -63,7 +63,7 @@ export class AppComponent {
   }
 
   asyncLazySlowTask() {
-    setTimeout(this.lazySlowTask, 4000);// this task finishes in 4 seconds, but is processed on a seperate thread alright
+    setTimeout(this.lazySlowTask, 0);// this task finishes in 0 seconds, but is processed on a seperate thread alright
   }
 
   superFastTask() {

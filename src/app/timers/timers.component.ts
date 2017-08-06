@@ -16,7 +16,7 @@ export class TimersComponent implements OnInit {
 
     var timeout = setTimeout(function () {
       console.log("hello setTimout");
-    }, 3000);
+    }, 1000);
 
     //
 
@@ -36,7 +36,19 @@ export class TimersComponent implements OnInit {
 
 
 
+    function asyncLog(val){
 
+      setTimeout(function(){
+
+       console.log(val);
+
+      },3000)
+
+    }
+
+console.log("first");
+asyncLog(9);
+console.log("third");
 
 
 
