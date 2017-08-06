@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { CallBackComponentComponent } from './call-back-component/call-back-component.component';
 import { TimersComponent } from './timers/timers.component';
+import { DomEventComponent } from './dom-event/dom-event.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CallBackComponentComponent,
-    TimersComponent
+    TimersComponent,
+    DomEventComponent
   ],
   imports: [
     BrowserModule,
